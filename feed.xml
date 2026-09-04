@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michele Meattini — Research &amp; Projects</title>
+    <link>https://michelemeattini.github.io/</link>
+    <description>Technical notes, papers and essays by Michele Meattini — electrical engineer and ML researcher.</description>
+    <language>en</language>
+    <atom:link href="https://michelemeattini.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+  </channel>
+</rss>
