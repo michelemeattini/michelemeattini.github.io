@@ -286,9 +286,9 @@
     (async () => {
       const container = document.getElementById('gh-repos');
       const LANG_COLORS = {
-        Python:'#3572A5', JavaScript:'#f1e05a', TypeScript:'#3178c6',
-        HTML:'#e34c26', CSS:'#563d7c', C:'#555555', 'C++':`#f34b7d`,
-        Jupyter Notebook:'#DA5B0B', Shell:'#89e051', default:'#78756e'
+        'Python':'#3572A5', 'JavaScript':'#f1e05a', 'TypeScript':'#3178c6',
+        'HTML':'#e34c26', 'CSS':'#563d7c', 'C':'#555555', 'C++':'#f34b7d',
+        'Jupyter Notebook':'#DA5B0B', 'Shell':'#89e051', 'fallback':'#78756e'
       };
       try {
         const res = await fetch(
@@ -306,7 +306,7 @@
 
         container.innerHTML = filtered.map(r => {
           const lang = r.language || '';
-          const color = LANG_COLORS[lang] || LANG_COLORS.default;
+          const color = LANG_COLORS[lang] || LANG_COLORS['fallback'];
           const desc = r.description
             ? `<p class="gh-repo-desc">${r.description}</p>` : '';
           const langBadge = lang
